@@ -1,4 +1,6 @@
-﻿@{
+﻿@model IEnumerable<FanSite.Models.Story>
+
+@{
     Layout = null;
 }
 <!DOCTYPE html>
@@ -9,27 +11,21 @@
 </head>
 <body>
     <div>
-        <h1><h2>Stories</h2></h1>
+        <h1>Stories</h1>
         <ul>
             <li><h1><a href="/">Home</a></h1></li>
             <li><h1><a href="../Sources/Index">Sources</a></h1></li>
         </ul>
 
-        <form>
-            <div>
-                <label>Name</label>
-                <input />
-            </div>
-            <div class="form-group">
-                <label>Story</label>
-                <input type="text"/>
-            </div>
-            <div class="text-center">
-                <button type="submit">
-                    Submit
-                </button>
-            </div>
-        </form>
+        <p>Stories</p>
+        @foreach (FanSite.Models.Story story in Model)
+        {
+            @story.StoryText; <br />
+            @story.Username; <br />
+            @story.Email; <br/>
+            <br />
+        }
+        <p><a asp-action="StoryForm">Submit a story</a></p>
 
         <h3>
             <a href="../Home/History">History</a>
@@ -39,3 +35,4 @@
         </h3>
     </div>
 </body>
+</html>

@@ -1,0 +1,47 @@
+﻿@model FanSite.Models.Story
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Stories</title>
+</head>
+<body>
+    <div>
+        <h1>Stories</h1>
+        <ul>
+            <li><h1><a href="/">Home</a></h1></li>
+            <li><h1><a href="../Sources/Index">Sources</a></h1></li>
+        </ul>
+
+        <form asp-action="StoryForm" method="post">
+            <div>
+                <label asp-for="Username">Username:</label>
+                <input asp-for="Username" />
+            </div>
+            <div>
+                <label asp-for="Email">Your email:</label>
+                <input asp-for="Email" />
+            </div>
+            <div>
+                <label asp-for="StoryText">Story:</label>
+                <input asp-for="StoryText" />
+            </div>
+            <div>
+                <button type="submit">Submit Story</button>
+            </div>
+        </form>
+
+        <h3>
+            <a href="../Home/History">History</a>
+        </h3>
+        <h3>
+            <a href="../Home/Stories">Stories</a>
+        </h3>
+    </div>
+</body>
+</html>

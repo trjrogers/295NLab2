@@ -1,4 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using FanSite.Models;
+using System.Linq;
+using System;
 
 namespace FanSite.Controllers
 {
@@ -18,7 +21,26 @@ namespace FanSite.Controllers
         [HttpGet]
         public ViewResult Stories()
         {
+            return View(FanSite.Models.Repository.Stories);
+        }
+
+        [HttpGet]
+        public ViewResult StoryForm()
+        {
             return View();
+        }
+
+        [HttpPost]
+        public ViewResult StoryForm(Story story)
+        {
+            if (ModelState.IsValid)
+            {
+                Repository.AddStory(story);
+                return View("Stories");
+            } else
+            {
+                return View();
+            }
         }
 
         [HttpGet]

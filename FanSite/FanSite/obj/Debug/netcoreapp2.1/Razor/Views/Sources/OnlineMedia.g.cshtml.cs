@@ -60,7 +60,7 @@ using FanSite.Models;
             WriteLiteral("<!DOCTYPE html>\r\n<html>\r\n");
             EndContext();
             BeginContext(52, 107, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("head", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "e51fbe653688404f8bc497b85adc6a97", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("head", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "1c5f888c8fba4ecdadf83d07fcd820f0", async() => {
                 BeginContext(58, 94, true);
                 WriteLiteral("\r\n    <meta name=\"viewport\" content=\"width=device-width\" />\r\n    <title>Online Media</title>\r\n");
                 EndContext();
@@ -80,7 +80,7 @@ using FanSite.Models;
             WriteLiteral("\r\n");
             EndContext();
             BeginContext(161, 461, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("body", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "da7848714ff74a7e9ce198530e0e70b8", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("body", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "cb424b43fbce4f53a5c128bd2474f773", async() => {
                 BeginContext(167, 448, true);
                 WriteLiteral(@"
     <div>

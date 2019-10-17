@@ -4,7 +4,7 @@ namespace FanSite.Models
 {
     public static class Repository
     {
-        private static List<Story> stories = new List<Story>();
+        public static List<Story> stories = new List<Story>();
 
         public static IEnumerable<Story> Stories
         {

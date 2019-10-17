@@ -1,7 +1,10 @@
-﻿using Microsoft.AspNetCore.Mvc;
-using FanSite.Models;
+﻿using System;
+using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
-using System;
+using System.Threading.Tasks;
+using Microsoft.AspNetCore.Mvc;
+using FanSite.Models;
 
 namespace FanSite.Controllers
 {
@@ -12,16 +15,14 @@ namespace FanSite.Controllers
             return View();
         }
 
-        [HttpGet]
         public ViewResult History()
         {
             return View();
         }
 
-        [HttpGet]
         public ViewResult Stories()
         {
-            return View(FanSite.Models.Repository.Stories);
+            return View(Repository.Stories);
         }
 
         [HttpGet]
@@ -43,7 +44,6 @@ namespace FanSite.Controllers
             }
         }
 
-        [HttpGet]
         public ViewResult Sources()
         {
             return View();

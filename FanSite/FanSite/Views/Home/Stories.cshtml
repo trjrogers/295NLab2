@@ -20,9 +20,9 @@
         <p>Stories</p>
         @foreach (FanSite.Models.Story story in Model)
         {
-            @story.StoryText; <br />
-            @story.Username; <br />
-            @story.Email; <br/>
+            @story.StoryText <br />
+            @story.Username <br />
+            @story.Email <br/>
             <br />
         }
         <p><a asp-action="StoryForm">Submit a story</a></p>
